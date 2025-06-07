@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+header {
+    background-color: black;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.logo-nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 70px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a.active,
+nav a:hover {
+    color: red;
+}
+
+.logo {
+    width: 50px;
+}
+
+.isi-halaman {
+    display: none;
+    padding: 100px;
+    text-align: center;
+}
+
+.isi-halaman.aktif {
+    display: block;
+}
+
+.produk-galeri {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.foto {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+}
+
+.ecommerce-link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.ecommerce-link img {
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+
+.ecommerce-link p {
+    text-align: center;
+    margin-top: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+/* Responsif: tampilan mobile */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .produk-galeri {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foto {
+        width: 80%;
+        height: auto;
+    }
+
+    .ecommerce-link {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ecommerce-link img {
+        width: 100px;
+        height: auto;
+    }
+}
+
+.deskripsi-beranda {
+    text-align: justify;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
